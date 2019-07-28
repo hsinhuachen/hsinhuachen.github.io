@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+*,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+a {
+    color: #000;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body{
+	color: #000;
+    font-family: "PingFangTC-Regular", "Lantinghei SC Extralight" , "Microsoft JhengHei", "微軟正黑體", sans-serif;
+    background-color: #F2EFEA;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 100%
+}
+
+.middle {
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	background: #DDD;
+	border-radius: 50%;
+}
+
+#header{
+	padding-top: 40px;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.container{
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
