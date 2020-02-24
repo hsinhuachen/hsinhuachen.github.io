@@ -1,0 +1,590 @@
+.pinkText{
+	color: $pink;
+}
+
+.purpleText{
+	color: $purple;
+}
+
+.greenText{
+	color: $green;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+	border: none;
+}
+
+.middle {
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.mid{
+	height: 100%;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.rel{
+	position: relative;
+}
+
+.nostyle{
+	list-style-type: none;
+}
+
+.banner{
+	position: relative;
+	height: 600px;
+	margin: 0 -15px;
+	background: url("../images/banner.jpg") no-repeat right center;
+	background-size: 80%;
+	overflow: hidden;
+}
+
+.bannerIcon{
+	position: absolute;
+	&.icon1{
+		top: 300px;
+    	left: -40px;
+	}
+	&.icon2{
+		top: 90px;
+    	left: 40px;
+	}
+	&.icon3{
+		top: 20px;
+    	right: 110px;
+	}
+	&.icon4{
+		top: 200px;
+    	right: -50px;
+	}
+}
+
+.bannerCircle{
+	position: absolute;
+	right: 90px;
+	top: 20px;
+	width: 760px;
+	height: 760px;
+	background: url("../images/circle.svg") no-repeat center center;
+}
+
+.bannerInfo{
+	max-width: 270px;
+	p{
+		color: $coffee;
+		font-weight: 700;
+		font-size: 27px;
+		text-align: center;
+		padding-top:25px;
+		letter-spacing: 2px;
+	}
+}
+
+.btn{
+	font-size: 25px;
+	width: 220px;
+	margin: 40px auto 0 auto;
+	padding: 2px 0;
+	letter-spacing: 2px;
+	border-radius: 25px;
+	display: block;
+	box-shadow: 2px 5px #213E6B;
+	img{
+		transform: translateY(-2px);
+	}
+	hr{
+		margin: 2px 20px 5px 20px;
+		border-top: 1px dashed #FFF;
+	}
+}
+
+#logo{
+	width: 293px;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.blockquote{
+	background: $pink;
+	height: 300px;
+	margin: 0 -15px;
+	h2{
+		color: #FFF;
+		font-size: 41px;
+		letter-spacing: 2px;
+		transform: skewY(5deg);
+		padding-bottom: 18px;
+	}
+	p{
+		color: #FFF;
+		font-size: 21px;
+		transform: skewY(5deg);
+	}
+	.mid{
+		height: 300px;
+	}
+}
+
+.homeAbout{
+	transform: skewY(-5deg) translateY(-50px);
+}
+
+.homeBlock{
+	transform: skewY(-5deg);
+	.bg{
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		right: 0;
+		top: -150px;
+		transform: skewY(5deg);
+		background: url("../images/circle4.svg") no-repeat right -50px top;
+		background-size: cover;
+	}
+}
+
+.aboutCycle{
+	width: 435px;
+	height: 435px;
+	transform: skewY(5deg) translateY(-60px);
+	background: url("../images/cicle2.svg") no-repeat center center;
+}
+
+.aboutImg{
+	transform: translateX(60px) translateY(30px);
+}
+
+.heartImg{
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(100%) translateY(-45%);
+}
+
+.featureWrap{
+	padding-top: 350px;
+	padding-bottom: 255px;
+}
+
+.featureImg{
+	max-width: 460px;
+	p{
+		color: $pink;
+		font-size: 18px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 140px;
+	}
+}
+
+.cardImg{
+	position: absolute;
+	left: 150px;
+	bottom: 0px;
+}
+
+.reasonCircle{
+	position: absolute;
+	width: 290px;
+	height: 290px;
+	border: 1.82px solid $pink;
+	border-radius: 50%;
+	p{
+		color: $coffee;
+		font-size: 17px;
+		line-height: 180%;
+		letter-spacing: 1px;
+	}
+	.pinkText{
+		font-size: 25px;
+		vertical-align: top;
+	}
+	&.reason1{
+		top: 0;
+		left: 28%;
+	}
+	&.reason2{
+		top: -50px;
+		left: 52%;
+	}
+	&.reason3{
+		top: -70px;
+		left: 75%;
+	}
+	.reasonTitle{
+		font-size: 30px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: #FFF;
+		width: 65px;
+		height: 65px;
+		background: $pink;
+		border-radius: 50%;
+		span{
+			font-size: 9px;
+			transform: translateY(10px);
+			display: block;
+		}
+	}
+}
+
+.featureCircle{
+	position: absolute;
+	width: 215px;
+	height: 215px;
+	.number, h2{
+		color: $pink;
+	}
+	.number{
+		font-size: 35px;
+		font-weight: 700;
+	}
+	img{
+		margin-bottom: 5px;
+	}
+	h2{
+		font-size: 19px;
+		font-weight: 700;
+	}
+	p{
+		color: $coffee;
+		font-size: 16px;
+		span{
+			font-size: 13px;
+		}
+	}
+	&.feature1{
+		top: 410px;
+		right: 100px;
+		background: #D8DDF2;
+	}
+	&.feature2{
+		top: 650px;
+		right: 100px;
+		background: #FFECC0;
+	}
+	&.feature3{
+		top: 800px;
+		right: 300px;
+		background: #FACFBC;
+	}
+	&.feature4{
+		top: 800px;
+		left: 300px;
+		background: #D8DDF2;
+	}
+	&.feature5{
+		top: 650px;
+		left: 100px;
+		background: #FFECC0;
+	}
+	&.feature6{
+		top: 410px;
+		left: 100px;
+		background: #C4F2EC;
+	}
+}
+
+.plusImg{
+	position: absolute;
+	left: calc((100% - 65px) / 2);
+	bottom: 130px;
+}
+
+.tableHeader{
+	padding: 0 !important;
+	.tableTitle{
+		width: 228px;
+		height: 150px;
+		background: url("../images/tableHeader.svg") no-repeat;
+		background-size: cover;
+		text-indent: -9999px;
+	}
+	.title1{
+		background-position: left top;
+	}
+	.title2{
+		margin-left: 2px;
+		background-position: -238px top;
+	}
+	.title3{
+		margin-right: 0;
+		margin-left: auto;
+		background-position: right top;
+	}
+}
+
+.homeCase{
+	padding-top: 100px;
+}
+
+.caseTable {
+	.row{
+		border-bottom: 2px solid $pink;
+		padding: 10px 0;
+	}
+	h3{
+		font-size: 21px;
+		line-height: 120%;
+		font-weight: 700;
+		margin-bottom: 0;
+		padding: 2px 0;
+	}
+	.small{
+		color: #918E8E;
+		font-size: 13px;
+	}
+	.big{
+		font-size: 25px;
+	}
+	p{
+		color: #5E6875;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 133%;
+		margin-bottom: 0;
+	}
+	.caseFooter{
+		border: none;
+		h3{
+			font-size: 33px;
+		}
+	}
+}
+
+.control{
+	padding-top: 40px;
+	.btn{
+		margin: 0 13px;
+	}
+}
+
+.col-title{
+	width: 441px;
+}
+
+.col-info{
+	width: 233px;
+}
+
+.caseInfo{
+	padding: 15px 0 0 0;
+}
+
+.caseHeader{
+	color: #FFF;
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	h3{
+		position: absolute;
+	}
+}
+
+.caseCircle1{
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 390px;
+	height: 390px;
+	background: url("../images/circle5.svg") no-repeat center center;
+	h3{
+		font-size: 37px;
+		font-weight: 700;
+		margin: 10px 0;
+	}
+	p{
+		font-size: 17px;
+		font-weight: 500;
+	}
+}
+
+.caseCircle2, .caseCircle3{
+	width: 440px;
+}
+
+.caseCircle2{
+	position: relative;
+	z-index: 1;
+	float: left;
+	transform: translate(70%,170px);
+	h3{
+		left: 140px;
+		bottom: 7px;
+	}
+	.caseHeader{
+		transform: translateY(30%);
+	}
+	.circle{
+		width: 440px;
+		height: 440px;
+		border-radius: 50%;
+		background-color: #B2EDE5;
+	}
+	.table th{
+		color: #066C6E;
+	}
+	.table td{
+		color: #5E5756
+	}
+	p{
+		color: #066C6E;
+		font-size: 17px;
+		font-weight: 700;
+		margin: 30px 0 30px 0;
+	}
+	.table tfoot span{
+		color: #066C6E;
+	}
+}
+
+.caseCircle3{
+	position: relative;
+	z-index: 2;
+	float: right;
+	transform: translate(0,126px);
+	h3{
+		left: 135px;
+		bottom: 3px;
+	}
+	.caseHeader{
+		transform: translateY(40%);
+	}
+	.circle{
+		width: 440px;
+		height: 440px;
+		border-radius: 50%;
+		background-color: #CED3E8;
+	}
+	p{
+		color: #57407D;
+		font-size: 17px;
+		font-weight: 700;
+		margin: 30px 0 30px 0;
+	}
+	.table{
+		width: 100%;
+	}
+	.table th{
+		color: #57407D;
+	}
+	.table td{
+		color: #5E5756
+	}
+	.table tfoot span{
+		color: #57407D;
+	}
+}
+
+.circle{
+	.inner{
+		width: 340px;
+	}
+}
+
+.clock{
+	width: 135px;
+	height: auto;
+	position: absolute;
+	right: 350px;
+    top: 330px;
+}
+
+.table{
+	margin: 0 auto;
+}
+
+.table th{
+	font-size: 15px;
+	font-weight: ˙00;
+}
+
+.table td{
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.table th, .table td{
+	text-align: center;
+	border-top: 2px solid #FFFFFF;
+	padding: 8px 0;
+}
+
+.table thead th{
+	border: none;
+	font-weight: 700;
+}
+
+.table tfoot{
+	font-size: 15px;
+	font-weight: 700;
+	span{
+		font-weight: 700;
+	}
+}
+
+.danger{
+	color: #DD2638 !important;
+	font-size: 35px !important;
+	transform: rotate(15deg);
+	position: absolute;
+	right: 55px;
+    bottom: 25px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.question{
+	position: absolute;
+	transform: translateX(5px) translateY(2px);
+}
+
+.note{
+	padding-top: 170px;
+	h4{
+		color: #9C161E;
+		font-size: 37px;
+		padding-bottom: 15px;
+		margin-bottom: 0;
+	}
+	h5{
+		color: $green;
+		font-size: 20px;
+		padding-bottom: 30px;
+	}
+	p{
+		color: #5E6875;
+		font-size: 17px;
+		padding-bottom: 80px;
+	}
+	.btn{
+		margin-top: 0;
+	}
+}
