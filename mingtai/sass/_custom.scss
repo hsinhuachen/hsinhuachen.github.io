@@ -94,7 +94,9 @@
 }
 
 .bannerInfo{
-	max-width: 270px;
+	@media screen and (min-width: 992px) {
+		max-width: 270px;
+	}
 	p{
 		color: $coffee;
 		font-weight: 700;
@@ -145,6 +147,9 @@
 		color: #FFF;
 		font-size: 21px;
 		transform: skewY(5deg);
+		br{
+			display: none;
+		}
 	}
 	.mid{
 		height: 300px;
@@ -317,6 +322,12 @@
 	position: absolute;
 	left: calc((100% - 65px) / 2);
 	bottom: 130px;
+}
+
+.plusImg2{
+	position: absolute;
+	left: calc((100% - 65px) / 2);
+	display: none;
 }
 
 .tableHeader{
