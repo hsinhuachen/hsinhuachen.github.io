@@ -10749,7 +10749,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .col-low {
-    height: 50px;
+    height: 45px;
   }
 
   .col-height {
@@ -10762,6 +10762,11 @@ a.text-dark:hover, a.text-dark:focus {
 
   .tableHeader .title2 {
     background-position: -263px top;
+  }
+
+  .control {
+    padding-top: 0px;
+    padding-bottom: 40px;
   }
 
   .caseCircle1 {
