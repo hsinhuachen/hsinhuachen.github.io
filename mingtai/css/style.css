@@ -10712,16 +10712,60 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .homeCase .inner {
+    width: 100vw;
+    margin: 0 -15px;
     overflow: auto;
   }
   .homeCase .caseTable {
     width: 991px;
     max-width: 991px;
-    margin: 0 15px;
+  }
+
+  .homeBlock .bg {
+    display: none;
+  }
+
+  .col-title {
+    position: absolute;
+    width: 200px;
+    background: #FFF;
+  }
+  .col-title .small {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .col-info {
+    width: calc(568px * 0.3333333333333);
+  }
+
+  .col-title, .col-info {
+    height: 60px;
+  }
+
+  .tableHeader .col-title,
+  .tableHeader .col-info {
+    height: auto;
+  }
+
+  .col-low {
+    height: 50px;
+  }
+
+  .col-height {
+    height: 80px;
+  }
+
+  .column1 {
+    margin-left: 200px;
   }
 
   .tableHeader .title2 {
     background-position: -263px top;
+  }
+
+  .caseCircle1 {
+    text-align: center;
   }
 
   .circleImg3 {
@@ -10863,12 +10907,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .featureImg {
-    width: 80vw;
-    height: 80vw;
+    width: 300px;
+    height: 300px;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
   }
   .featureImg p {
     font-size: 16px;
     bottom: 80px;
+  }
+
+  .cardImg {
+    bottom: -10px;
   }
 
   .featureCircle h2 {
