@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="390" height="390" viewBox="0 0 390 390" style="enable-background:new 0 0 390 390;" xml:space="preserve">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 395 395" style="enable-background:new 0 0 395 395;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#DE6C6E;}
-	.st1{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
-	.st2{fill:#FFFFFF;}
-	.st3{fill:none;stroke:#DE6C6E;stroke-width:5.8028;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#DE6C6E;stroke-width:2.176;stroke-miterlimit:10;stroke-dasharray:408.4232,204.2117;}
+	.st0{fill:none;stroke:#DE6C6E;stroke-width:5.8028;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#DE6C6E;stroke-width:2.176;stroke-miterlimit:10;stroke-dasharray:408.4232,204.2117;}
 </style>
 <g>
 	<g>
-		<circle class="st3" cx="195.4" cy="195.19" r="181.23"/>
+		<circle class="st0" cx="197.9" cy="197.7" r="181.2"/>
 		<g>
-			<circle class="st4" cx="195.4" cy="195.19" r="195"/>
+			<circle class="st1" cx="197.9" cy="197.7" r="195"/>
 		</g>
 	</g>
 </g>

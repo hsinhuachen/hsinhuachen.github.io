@@ -183,7 +183,7 @@
 	    padding-bottom: 100%;
 	    height: 0;
 	    transform: skewY(5deg) translateY(-30px);
-	    background-size: cover;
+	    background-size: 95%;
 	    margin: 0 10px;
 	}
 
@@ -265,6 +265,8 @@
 	.featureWrap{
 		padding-top: 20px;
 		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.featureImg{
@@ -398,6 +400,12 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.featureInfo p{
+		display: block;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.aboutCycle {
 		transform: skewY(5deg) translateY(0px);
@@ -409,7 +417,6 @@
 
 	.homeCase{
 		.inner{
-			width: 100vw;
     		margin: 0 -15px;
 			overflow: auto;
 		}
@@ -421,6 +428,10 @@
 
 	.homeBlock .bg{
 		display: none;
+	}
+
+	.cardImg{
+		width: 120px;
 	}
 
 	.col-title{
@@ -446,6 +457,10 @@
 		height: auto;
 	}
 
+	.tableHeader .col-title{
+		background: none;
+	}
+
 	.col-low{
 		height: 45px;
 	}
@@ -459,7 +474,7 @@
 	}
 
 	.tableHeader .title2 {
-	    background-position: -263px top;
+	    background-position: -203px top;
 	}
 
 	.control{
@@ -496,7 +511,7 @@
 		height: 360px;
 		margin-bottom: 20px;
 		p{
-			bottom: 90px;
+			bottom: 70px;
 		}
 	}
 
@@ -510,10 +525,12 @@
 		display: none;
 	}
 
-
-
 	.cardImg {
 	    bottom: -30px;
+	}
+
+	.table th, .table td{
+		font-size: 13px;
 	}
 }
 
@@ -563,7 +580,6 @@
 	}
 
 	.cardImg{
-		width: 32vw;
 		left: 100px;
 	}
 
@@ -586,8 +602,8 @@
 	}
 
 	.reasonCircle{
-		width: 80vw;
-		height: 80vw;
+		width: 300px;
+		height: 300px;
 	}
 
 	.heartImg{
@@ -595,6 +611,10 @@
 		position: static;
 		margin: 0 auto 20px auto;
 		transform: translateX(0) translateY(0);
+	}
+
+	#about, .homeBlock{
+		padding-top: 20px;
 	}
 
 	.aboutCycle{
@@ -619,15 +639,14 @@
 	.featureImg{
 		width: 300px;
 		height: 300px;
-		margin-left: -15px !important;
-		margin-right: -15px !important;
 		p{
-			font-size: 16px;
-			bottom: 80px;
+			font-size: 15px;
+			bottom: 60px;
 		}
 	}
 
 	.cardImg{
+		width: 100px;
 		bottom: -10px;
 	}
 
@@ -652,19 +671,23 @@
 	.caseCircle2{
 		margin-top: -50px;
 		p{
-			font-size: 15px;
+			font-size: 13px;
 			margin: 10px 0;
 		}
 	}
 
 	.caseCircle3{
 		margin-top: -50px;
+		p{
+			font-size: 13px;
+			margin: 10px 0;
+		}
 	}
 
 	.caseCircle2 .circle, 
 	.caseCircle3 .circle{
-		width: calc(100vw - 30px);
-		height: calc(100vw - 30px);
+		width: 355px;
+		height: 355px;
 		margin: 0 auto;
 	}
 
@@ -686,6 +709,12 @@
 		width: 768px;
 	}
 
+	.caseCircle2, .caseCircle3{
+		.inner{
+			width: 80%;
+		}
+	}
+
 	.caseTable h3{
 		font-size: 17px;
 	}
@@ -704,7 +733,7 @@
 
 	.danger{
 		right: 55px;
-    	bottom: -25px;
+    	bottom: 5px;
 	}
 
 	.noteControl{
@@ -723,9 +752,51 @@
 	.noteimg{
 		max-width: 100%;
 	}
+
+	.table th, .table td{
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 375px){
+	.featureImg, .reasonCircle,
+	.caseCircle1{
+		width: 80vw;
+		height: 80vw;
+	}
+
+	.caseCircle1 h3{
+		font-size: 9vmin;
+	}
+
+	.reasonCircle p{
+		font-size: 5vmin;
+	}
+
+	.reasonCircle .pinkText {
+	    font-size: 6vmin;
+	}
+
+	.caseCircle1 img{
+		font-size: 80px;
+	}
+
+	.caseHeader img{
+		width: 150px;
+	}
+
+	.caseHeader h3{
+		font-size: 5.6vmin;
+		margin: 0;
+		transform: translateY(-30px);
+	}
 }
 
 @media (max-width: 320px){
+	.control .btn{
+		margin-bottom: 20px;
+	}
+	
 	.caseCircle2,
 	.caseCircle3{
 		margin-top: 20px;
@@ -737,6 +808,16 @@
 	}
 
 	.caseCircle2 .circle, .caseCircle3 .circle {
+		width: 100%;
+		height: auto;
 	    background: none;
+	}
+
+	.caseCircle2 .inner, .caseCircle3 .inner{
+		width: 90%;
+	}
+
+	.danger{
+		bottom: -50px;
 	}
 }

@@ -9892,7 +9892,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 435px;
   height: 435px;
   transform: skewY(5deg) translateY(-60px);
-  background: url("../images/cicle2.svg") no-repeat center center;
+  background: url("../images/circle2.svg?2") no-repeat center center;
 }
 
 .aboutImg {
@@ -10138,7 +10138,7 @@ a.text-dark:hover, a.text-dark:focus {
   top: 15px;
   width: 390px;
   height: 390px;
-  background: url("../images/circle5.svg") no-repeat center center;
+  background: url("../images/circle5.svg?2") no-repeat center center;
 }
 .caseCircle1 h3 {
   font-size: 37px;
@@ -10490,7 +10490,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-bottom: 100%;
     height: 0;
     transform: skewY(5deg) translateY(-30px);
-    background-size: cover;
+    background-size: 95%;
     margin: 0 10px;
   }
 
@@ -10572,6 +10572,8 @@ a.text-dark:hover, a.text-dark:focus {
   .featureWrap {
     padding-top: 20px;
     padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .featureImg {
@@ -10702,6 +10704,11 @@ a.text-dark:hover, a.text-dark:focus {
     display: block;
   }
 }
+@media screen and (max-width: 768px) {
+  .featureInfo p {
+    display: block;
+  }
+}
 @media screen and (max-width: 767px) {
   .aboutCycle {
     transform: skewY(5deg) translateY(0px);
@@ -10712,7 +10719,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .homeCase .inner {
-    width: 100vw;
     margin: 0 -15px;
     overflow: auto;
   }
@@ -10723,6 +10729,10 @@ a.text-dark:hover, a.text-dark:focus {
 
   .homeBlock .bg {
     display: none;
+  }
+
+  .cardImg {
+    width: 120px;
   }
 
   .col-title {
@@ -10748,6 +10758,10 @@ a.text-dark:hover, a.text-dark:focus {
     height: auto;
   }
 
+  .tableHeader .col-title {
+    background: none;
+  }
+
   .col-low {
     height: 45px;
   }
@@ -10761,7 +10775,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .tableHeader .title2 {
-    background-position: -263px top;
+    background-position: -203px top;
   }
 
   .control {
@@ -10799,7 +10813,7 @@ a.text-dark:hover, a.text-dark:focus {
     margin-bottom: 20px;
   }
   .featureImg p {
-    bottom: 90px;
+    bottom: 70px;
   }
 
   .features ul {
@@ -10814,6 +10828,10 @@ a.text-dark:hover, a.text-dark:focus {
 
   .cardImg {
     bottom: -30px;
+  }
+
+  .table th, .table td {
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -10858,7 +10876,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .cardImg {
-    width: 32vw;
     left: 100px;
   }
 
@@ -10881,8 +10898,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .reasonCircle {
-    width: 80vw;
-    height: 80vw;
+    width: 300px;
+    height: 300px;
   }
 
   .heartImg {
@@ -10890,6 +10907,10 @@ a.text-dark:hover, a.text-dark:focus {
     position: static;
     margin: 0 auto 20px auto;
     transform: translateX(0) translateY(0);
+  }
+
+  #about, .homeBlock {
+    padding-top: 20px;
   }
 
   .aboutCycle {
@@ -10914,15 +10935,14 @@ a.text-dark:hover, a.text-dark:focus {
   .featureImg {
     width: 300px;
     height: 300px;
-    margin-left: -15px !important;
-    margin-right: -15px !important;
   }
   .featureImg p {
-    font-size: 16px;
-    bottom: 80px;
+    font-size: 15px;
+    bottom: 60px;
   }
 
   .cardImg {
+    width: 100px;
     bottom: -10px;
   }
 
@@ -10948,18 +10968,22 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: -50px;
   }
   .caseCircle2 p {
-    font-size: 15px;
+    font-size: 13px;
     margin: 10px 0;
   }
 
   .caseCircle3 {
     margin-top: -50px;
   }
+  .caseCircle3 p {
+    font-size: 13px;
+    margin: 10px 0;
+  }
 
   .caseCircle2 .circle,
   .caseCircle3 .circle {
-    width: calc(100vw - 30px);
-    height: calc(100vw - 30px);
+    width: 355px;
+    height: 355px;
     margin: 0 auto;
   }
 
@@ -10981,6 +11005,10 @@ a.text-dark:hover, a.text-dark:focus {
     width: 768px;
   }
 
+  .caseCircle2 .inner, .caseCircle3 .inner {
+    width: 80%;
+  }
+
   .caseTable h3 {
     font-size: 17px;
   }
@@ -10999,7 +11027,7 @@ a.text-dark:hover, a.text-dark:focus {
 
   .danger {
     right: 55px;
-    bottom: -25px;
+    bottom: 5px;
   }
 
   .noteControl {
@@ -11016,8 +11044,49 @@ a.text-dark:hover, a.text-dark:focus {
   .noteimg {
     max-width: 100%;
   }
+
+  .table th, .table td {
+    font-size: 11px;
+  }
+}
+@media (max-width: 375px) {
+  .featureImg, .reasonCircle,
+  .caseCircle1 {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .caseCircle1 h3 {
+    font-size: 9vmin;
+  }
+
+  .reasonCircle p {
+    font-size: 5vmin;
+  }
+
+  .reasonCircle .pinkText {
+    font-size: 6vmin;
+  }
+
+  .caseCircle1 img {
+    font-size: 80px;
+  }
+
+  .caseHeader img {
+    width: 150px;
+  }
+
+  .caseHeader h3 {
+    font-size: 5.6vmin;
+    margin: 0;
+    transform: translateY(-30px);
+  }
 }
 @media (max-width: 320px) {
+  .control .btn {
+    margin-bottom: 20px;
+  }
+
   .caseCircle2,
   .caseCircle3 {
     margin-top: 20px;
@@ -11029,6 +11098,16 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .caseCircle2 .circle, .caseCircle3 .circle {
+    width: 100%;
+    height: auto;
     background: none;
+  }
+
+  .caseCircle2 .inner, .caseCircle3 .inner {
+    width: 90%;
+  }
+
+  .danger {
+    bottom: -50px;
   }
 }
