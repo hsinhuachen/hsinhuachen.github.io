@@ -490,6 +490,11 @@
 		width: 100%;
 		height: auto;
 	}
+	
+	#featured{
+		padding-left: 0;
+		padding-right: 0;
+	}
 
 	.features .featureCircle{
 		width: calc(540px / 2 - 20px);
@@ -793,8 +798,21 @@
 }
 
 @media (max-width: 320px){
+	.bannerIcon.icon1 {
+	    top: 140px;
+	}
+
+	.bannerIcon.icon4 {
+	    top: 120px;
+	}
+
 	.control .btn{
 		margin-bottom: 20px;
+	}
+
+	.featureImg, .reasonCircle, .caseCircle1{
+		width: 90vw;
+		height: 90vw;
 	}
 	
 	.caseCircle2,
