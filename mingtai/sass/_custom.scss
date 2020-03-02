@@ -328,6 +328,7 @@
 	p{
 		color: $coffee;
 		font-size: 16px;
+		font-weight: 700;
 		span{
 			font-size: 13px;
 		}
@@ -612,11 +613,11 @@
 
 .danger{
 	color: #DD2638 !important;
-	font-size: 35px !important;
+	font-size: 28px !important;
 	transform: rotate(15deg);
 	position: absolute;
-	right: 55px;
-    bottom: 25px;
+	right: 66px;
+    bottom: 30px;
     text-shadow: 1px 1px 2px #000;
 }
 

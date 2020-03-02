@@ -616,11 +616,11 @@
 
 	.blockquote{
 		h2{
-			font-size: 17px;
+			font-size: 14px;
 			margin-bottom: 0;
 		}
 		p{
-		font-size: 13px;
+		font-size: 12px;
 			margin-bottom: 0;
 		}
 	}
@@ -681,6 +681,12 @@
 
 	.banner{
 		background-position: center bottom;
+		.mid{
+			height: auto;
+			-ms-flex-align: flex-start;
+		    -webkit-align-items: flex-start;
+		    align-items: flex-start;
+		}
 	}
 
 	.homeAbout{
@@ -756,15 +762,16 @@
 		display: flex;
 	    align-items: center;
 	    justify-content: center;
-	    .btn{
-	    	font-size: 14px;
-	    	padding-left: 15px;
-	    	padding-right: 15px;
-	    	img{
-	    		width: 20px;
-	    	}
-	    }
 	}
+
+	.btn{
+    	font-size: 14px;
+    	padding-left: 15px;
+    	padding-right: 15px;
+    	img{
+    		width: 20px;
+    	}
+    }
 
 	.caseCircle1, .clock{
 		width: 50vw;
@@ -775,7 +782,7 @@
 		top: calc(50vw * 0.3);
 		right: 0;
 		img{
-			width: 45%;
+			width: 50%;
 			margin: 0 auto;
 			transform: translateX(20px);
 			display: block;
@@ -790,10 +797,11 @@
 	.caseCircle1 {
 		top: 0;
 		img{
-			width: 35%;
+			width: 30%;
 		}
 		h3{
 			font-size: 6vmin;
+			margin: 5px 0;
 		}
 		p{
 			font-size: 15px;
@@ -876,7 +884,7 @@
 	}
 
 	.noteControl{
-		width: 100vw;
+		width: 80vw;
 		margin: 20px -15px 0 -15px;
 	}
 
@@ -963,28 +971,28 @@
 
 @media (max-width: 414px) {
 	.features{
-		width: 100%;
+		width: 100vw;
+   		margin: 0 -15px;
 		.featureCircle{
-			width: calc((100vw - 60px) / 2);
-			height: calc((100vw - 60px) / 2);
+			width: calc((100vw - 30px) / 2);
+			height: calc((100vw - 30px) / 2);
 		}
 	}
 
 	.plusImg{
 		width: 45px;
 		left: calc((100% - 45px) / 2);
-		bottom: calc((100vw - 60px) + 55px);
+		bottom: calc((100vw - 30px) + 55px);
 	}
 
 	.plusImg2{
 		width: 45px;
 		left: calc((100% - 45px) / 2);
-		bottom: calc((100vw - 60px) / 2 + 30px);
+		bottom: calc((100vw - 30px) / 2 + 30px);
 	}
 }
 
 @media (max-width: 375px){
-
 	.caseCircle2{
 		padding-top: 80px;
 	}
@@ -997,8 +1005,29 @@
 }
 
 @media (max-width: 360px){
+	.bannerInfo #logo{
+		width: 150px;
+	}
+
+	.bannerInfo p{
+		font-size: 17px;
+	}
+
+	.bannerIcon.icon2{
+		top: 50px;
+	}
+
+	.banner{
+		height: 100vh;
+	}
+
+	.banner .bannerCircle{
+		width: 260px;
+	}
+
 	.heartImg{
-		transform: translateX(0) translateY(-100%);
+		width: 28px;
+		transform: translateX(-10px) translateY(-100%);
 	}
 
 	.bannerIcon.icon1 {
@@ -1041,10 +1070,32 @@
 	}
 
 	.danger{
-		bottom: -50px;
+		font-size: 21px !important;
+		bottom: -40px;
 	}
 
 	.table th, .table td{
 		padding-top: 0;
+	}
+
+	.featureCircle {
+		.number{
+			font-size: 17px;
+		}
+		h2{
+			font-size: 13px;
+			margin-bottom: 5px;
+		}
+		p, p span{
+			font-size: 11px;
+		}
+		p br{
+			display: none;
+		}
+	}
+
+	.featureCircle.feature5 img, 
+	.featureCircle.feature6 img{
+		width: 20%;
 	}
 }
