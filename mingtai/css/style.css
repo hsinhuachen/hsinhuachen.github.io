@@ -9733,6 +9733,10 @@ a.text-dark:hover, a.text-dark:focus {
   content: "\e091";
 }
 
+.fade.in {
+  opacity: 1;
+}
+
 .pinkText {
   color: #DE6C6E;
 }
