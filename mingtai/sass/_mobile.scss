@@ -183,8 +183,8 @@
 	    padding-bottom: 100%;
 	    height: 0;
 	    transform: skewY(5deg) translateY(-30px);
-	    background-size: 95%;
-	    margin: 0 10px;
+	    background-size: 100%;
+	    margin: 0;
 	}
 
 	.aboutImg {
@@ -302,7 +302,7 @@
 	.featureCircle{
 		position: static;
 		h2{
-			font-size: 19px;
+			font-size: 27px;
 		}
 	}
 
@@ -406,9 +406,31 @@
 	}
 }
 
+@media screen and (min-width: 768px) {
+	.mNote{
+		display: none;
+	}
+}
+
 @media screen and (max-width: 767px) {
+	.mNote{
+		color: #47b3a2;
+		font-size: 19px;
+		i{
+			transform: translateY(1px);
+		}
+	}
+
+	.bannerIcon.icon1{
+		top: 300px;
+	}
+
 	.aboutCycle {
 		transform: skewY(5deg) translateY(0px);
+	}
+
+	.aboutImg{
+		transform: translateX(-20px) translateY(-20px);
 	}
 
 	.caseTable h3{
@@ -477,9 +499,19 @@
 	    background-position: -203px top;
 	}
 
+	.caseFooter .col-title, .caseFooter .col-info{
+		height: 40px;
+	}
+
 	.control{
-		padding-top: 0px;
+		padding-top: 20px;
 		padding-bottom: 40px;
+	}
+
+	.reasonCircle {
+	    float: none !important;
+	    margin: 0 auto 20px auto !important;
+	    transform: translateY(0) !important;
 	}
 
 	.caseCircle1{
@@ -494,21 +526,6 @@
 	#featured{
 		padding-left: 0;
 		padding-right: 0;
-	}
-
-	.features .featureCircle{
-		width: calc(540px / 2 - 20px);
-		height: calc(540px / 2 - 20px);
-		margin-left: auto;
-		margin-right: auto;
-		float: none;
-		display: block;
-	}
-
-	.reasonCircle{
-		float: none !important;
-		margin: 0 auto 20px auto !important;
-		transform: translateY(0) !important;
 	}
 
 	.featureImg{
@@ -526,9 +543,6 @@
 	    column-count: 1;
 	}
 
-	.plusImg, .plusImg2{
-		display: none;
-	}
 
 	.cardImg {
 	    bottom: -30px;
@@ -536,6 +550,23 @@
 
 	.table th, .table td{
 		font-size: 13px;
+	}
+
+	.featureCircle{
+		p{
+			font-size: 19px;
+		}
+		p span{
+			font-size: 15px; 
+		}
+	}
+
+	.plusImg{
+		bottom: 540px;
+	}
+
+	.plusImg2{
+		bottom: 260px;
 	}
 }
 
@@ -546,21 +577,23 @@
 		    left: 0px;
 		}
 	    &.icon2 {
-		    top: 10px;
-		    left: 40px;
+		    top: 70px;
+		    left: 0px;
 		}
 		&.icon3 {
 		    top: 40px;
     		right: 0px;
 		}
 		&.icon4 {
-		    top: 160px;
-    		right: -10px;
+		    top: 120px;
+    		right: -20px;
 		}
 	}
 
-	.blockquote, .blockquote .mid{
-		height: auto;
+	.banner .bannerCircle{
+		width: 310px;
+		height: 380px;
+		padding-bottom: 0;
 	}
 
 	.bannerInfo{
@@ -568,42 +601,33 @@
 			width: 206px;
 		}
 		p{
-			font-size: 21px;
+			font-size: 19px;
+			padding-top: 10px;
+			margin-bottom: 10px;
 		}
 	}
 
 	.btn{
 		width: auto;
 		font-size: 15px;
+		padding: 2px 25px;
 		display: inline-block;
 	}
 
-	.clock{
-		width: 72px;
-		top: 0;
-		right: 0;
-	}
-
-	.cardImg{
-		left: 100px;
-	}
-
-	.reasonCircle p{
-		font-size: 19px;
+	.blockquote{
+		h2{
+			font-size: 17px;
+			margin-bottom: 0;
+		}
+		p{
+		font-size: 13px;
+			margin-bottom: 0;
+		}
 	}
 
 	.bannerIcon {
 	    width: 62px;
 	    height: 62px;
-	}
-
-	.blockquote h2{
-		font-size: 25px;
-		padding-bottom: 0;
-	}
-
-	.blockquote p{
-		font-size: 15px;
 	}
 
 	.reasonCircle{
@@ -613,20 +637,54 @@
 
 	.heartImg{
 		width: 36px;
-		position: static;
-		margin: 0 auto 20px auto;
-		transform: translateX(0) translateY(0);
+		transform: translateX(15px) translateY(-100%);
 	}
 
-	#about, .homeBlock{
-		padding-top: 20px;
+	.homeAbout .container, .homeBlock .container{
+		max-width: 375px;
+		padding: 0;
+		.col-5{
+			padding: 0;
+		}
+		.col-7{
+			padding-right: 0;
+		}
+	}
+
+	.homeAbout .row, .homeBlock .row{
+		margin: 0;
+	}
+
+	.homeAbout .inner, .homeBlock .inner{
+		padding-left: 20px;
+	}
+
+	.blockquote, .blockquote .mid{
+		height: 140px;
 	}
 
 	.aboutCycle{
-		width: 240px;
-		height: 240px;
-		padding-bottom: 0;
-		margin: 0 auto;
+		margin: 0;
+		transform: skewY(5deg) translateY(-10px) translateX(20px);
+	}
+
+	.aboutImg{
+		width: 110px;
+		height: auto;
+		transform: translateX(-10px) translateY(0px);
+	}
+
+	.catimg{
+		width: 70px;
+		height: auto;
+	}
+
+	.banner{
+		background-position: center bottom;
+	}
+
+	.homeAbout{
+		transform: skewY(-5deg) translateY(-20px);
 	}
 
 	.homeAbout .col-sm-7, .homeBlock .col-sm-7{
@@ -641,40 +699,112 @@
 		}
 	}
 
-	.featureImg{
-		width: 300px;
-		height: 300px;
+	.homeBlock .heartImg{
+		transform: translateX(100%) translateY(-50%);
+	}
+
+	.reasonCircle{
+		width: 243px;
+		height: 243px;
+	}
+
+	.reasonCircle{
 		p{
 			font-size: 15px;
-			bottom: 60px;
+		}
+		.pinkText {
+		    font-size: 17px;
+		}
+		img{
+			height: auto;
+		}
+		&.reason1 img{
+			width: 100px;
+		}
+		&.reason2 img{
+			width: 80px;
+		}
+		&.reason3 img{
+			width: 100px;
+		}
+	}
+
+	.circleImg3{
+		width: 243px;
+	}
+
+	.featureImg{
+		width: 243px;
+		height: 243px;
+		p{
+			font-size: 15px;
+			bottom: 35px;
 		}
 	}
 
 	.cardImg{
-		width: 100px;
-		bottom: -10px;
+		width: 80px;
+		left: 85px;
+		bottom: -15px;
 	}
 
-	.featureCircle h2 {
-	    font-size: 27px;
+	.control{
+		padding-bottom: 10px;
 	}
 
-	.featureCircle p{
-		font-size: 19px;
+	.control, .noteControl{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    .btn{
+	    	font-size: 14px;
+	    	padding-left: 15px;
+	    	padding-right: 15px;
+	    	img{
+	    		width: 20px;
+	    	}
+	    }
 	}
 
-	.caseCircle1{
-		position: static;
+	.caseCircle1, .clock{
+		width: 50vw;
+		height: 50vw;
+	}
+
+	.clock{
+		top: calc(50vw * 0.3);
+		right: 0;
+		img{
+			width: 45%;
+			margin: 0 auto;
+			transform: translateX(20px);
+			display: block;
+		}
 	}
 
 	.caseCircle2, .caseCircle3{
 		width: 100vw;
 		margin: 0 -15px;
-		padding-top: 0;
+	}
+
+	.caseCircle1 {
+		top: 0;
+		img{
+			width: 35%;
+		}
+		h3{
+			font-size: 6vmin;
+		}
+		p{
+			font-size: 15px;
+		}
 	}
 
 	.caseCircle2{
-		margin-top: -50px;
+		padding-top: 120px;
+		.caseHeader{
+			transform: translateY(45%);
+		}
 		p{
 			font-size: 13px;
 			margin: 10px 0;
@@ -682,7 +812,11 @@
 	}
 
 	.caseCircle3{
-		margin-top: -50px;
+		padding-top: 0px;
+		margin-top: -120px;
+		.caseHeader{
+			transform: translateY(45%);
+		}
 		p{
 			font-size: 13px;
 			margin: 10px 0;
@@ -697,7 +831,7 @@
 	}
 
 	.caseHeader img{
-		width: 190px;
+		width: 150px;
 	}
 
 	.caseHeader h3{
@@ -729,7 +863,7 @@
 	}
 
 	.caseTable .caseFooter h3{
-		font-size: 27px;
+		font-size: 21px;
 	}
 
 	.tableHeader .title2{
@@ -742,15 +876,24 @@
 	}
 
 	.noteControl{
-		width: 100%;
+		width: 100vw;
+		margin: 20px -15px 0 -15px;
 	}
 
 	.note{
+		padding-top: 20px;
 		h4{
-			font-size: 21px;
+			font-size: 19px;
 		}
-		p br{
-			display: none !important;
+		h5{
+			font-size: 17px;
+		}
+		p{
+			font-size: 13px;
+			margin: 0 -15px;
+		}
+		.br1, .br2{
+			display: block;
 		}
 	}
 
@@ -761,33 +904,89 @@
 	.table th, .table td{
 		font-size: 11px;
 	}
+
+	.features{
+		width: 384px;
+		text-align: center;
+		margin: 0 auto;
+		.featureCircle{
+			width: calc((384px - 60px) / 2);
+			height: calc((384px - 60px) / 2);
+			float: none;
+			vertical-align: top;
+			display: inline-block;
+		}
+	}
+
+	.featureCircle{
+		.number {
+		    font-size: 8.26vmin;
+		}
+		h2 {
+		    font-size: 4.26vmin;
+		}
+		p, p span{
+			font-size: 2.99vmin;
+		}
+		img{
+			width: 40%;
+		}
+		&.feature5 img, &.feature6 img{
+			width: 30%;
+		}
+	}
+
+	.plusImg{
+		width: 45px;
+		left: calc((100% - 45px) / 2);
+		bottom: calc((384px - 60px) + 55px);
+	}
+
+	.plusImg2{
+		width: 45px;
+		left: calc((100% - 45px) / 2);
+		bottom: calc((384px - 60px) / 2 + 30px);
+	}
+
+	.col-title{
+		width: 150px;
+	}
+
+	.column1 {
+	    margin-left: 150px;
+	}
+
+	.table th, .table td{
+		border-top: 1px solid #FFFFFF;
+	}
+}
+
+@media (max-width: 414px) {
+	.features{
+		width: 100%;
+		.featureCircle{
+			width: calc((100vw - 60px) / 2);
+			height: calc((100vw - 60px) / 2);
+		}
+	}
+
+	.plusImg{
+		width: 45px;
+		left: calc((100% - 45px) / 2);
+		bottom: calc((100vw - 60px) + 55px);
+	}
+
+	.plusImg2{
+		width: 45px;
+		left: calc((100% - 45px) / 2);
+		bottom: calc((100vw - 60px) / 2 + 30px);
+	}
 }
 
 @media (max-width: 375px){
-	.featureImg, .reasonCircle,
-	.caseCircle1{
-		width: 80vw;
-		height: 80vw;
-	}
 
-	.caseCircle1 h3{
-		font-size: 9vmin;
-	}
-
-	.reasonCircle p{
-		font-size: 5vmin;
-	}
-
-	.reasonCircle .pinkText {
-	    font-size: 6vmin;
-	}
-
-	.caseCircle1 img{
-		font-size: 80px;
-	}
-
-	.caseHeader img{
-		width: 150px;
+	.caseCircle2{
+		padding-top: 80px;
 	}
 
 	.caseHeader h3{
@@ -797,7 +996,11 @@
 	}
 }
 
-@media (max-width: 320px){
+@media (max-width: 360px){
+	.heartImg{
+		transform: translateX(0) translateY(-100%);
+	}
+
 	.bannerIcon.icon1 {
 	    top: 140px;
 	}
@@ -809,15 +1012,17 @@
 	.control .btn{
 		margin-bottom: 20px;
 	}
-
-	.featureImg, .reasonCircle, .caseCircle1{
-		width: 90vw;
-		height: 90vw;
-	}
 	
-	.caseCircle2,
+	.caseCircle2{
+		margin-top: 80px;
+	}
+
 	.caseCircle3{
-		margin-top: 20px;
+		margin-top: 40px;
+	}
+
+	.caseCircle2 p, .caseCircle3 p{
+		margin-top: 0;
 	}
 
 	.caseCircle2 .caseHeader,
@@ -837,5 +1042,9 @@
 
 	.danger{
 		bottom: -50px;
+	}
+
+	.table th, .table td{
+		padding-top: 0;
 	}
 }

@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-arrow-left:before {
+    content: "\e091";
+}
+
 .pinkText{
 	color: $pink;
 }
@@ -17,6 +39,7 @@
 	visibility: hidden;
 	width: 0;
 	height: 0;
+	margin: 0;
 	border: none;
 }
 
@@ -114,8 +137,12 @@
 	padding: 2px 0;
 	letter-spacing: 2px;
 	border-radius: 25px;
+	border: none;
 	display: block;
 	box-shadow: 2px 5px #213E6B;
+	transition: -webkit-box-shadow .2s ease;
+    transition: box-shadow .2s ease;
+    transition: box-shadow .2s ease, -webkit-box-shadow .2s ease;
 	img{
 		transform: translateY(-2px);
 	}
@@ -123,6 +150,19 @@
 		margin: 2px 20px 5px 20px;
 		border-top: 1px dashed #FFF;
 	}
+	&:hover{
+		position: relative;
+		top: 5px;
+     	box-shadow: inset 0 0 0 0 transparent; 
+	}
+}
+
+.btn-info:hover{
+	background: $cyan;
+}
+
+.btn-danger:hover{
+	background: $red;
 }
 
 #logo{
@@ -189,12 +229,18 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	transform: translateX(100%) translateY(-45%);
+	transform: translateX(100%) translateY(-60%);
 }
 
 .featureWrap{
 	padding-top: 350px;
 	padding-bottom: 255px;
+}
+
+@media screen and (min-width: 768px) {
+	.featureInfo br{
+		display: none;
+	}
 }
 
 .featureImg{
@@ -522,11 +568,13 @@
 }
 
 .clock{
-	width: 135px;
-	height: auto;
 	position: absolute;
-	right: 350px;
+	right: 385px;
     top: 330px;
+    img{
+		width: 110px;
+		height: auto;
+    }
 }
 
 .table{
@@ -569,7 +617,7 @@
 	position: absolute;
 	right: 55px;
     bottom: 25px;
-    text-shadow: 1px 1px 5px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 
 .question{
@@ -586,7 +634,7 @@
 		margin-bottom: 0;
 	}
 	h5{
-		color: $green;
+		color: #066c70;
 		font-size: 20px;
 		padding-bottom: 30px;
 	}
@@ -597,5 +645,8 @@
 	}
 	.btn{
 		margin-top: 0;
+	}
+	.br1, .br2{
+		display: none;
 	}
 }
