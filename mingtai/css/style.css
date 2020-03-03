@@ -10791,6 +10791,7 @@ a.text-dark:hover, a.text-dark:focus {
 
   .caseTable h3 {
     position: relative;
+    font-size: 17px;
   }
 
   .homeCase .inner {
@@ -11329,6 +11330,21 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 @media (max-width: 375px) {
+  .col-title {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .col-title.col-height {
+    padding-top: 20px;
+  }
+
+  .col-low {
+    height: 60px;
+  }
+
   .caseCircle2 {
     padding-top: 80px;
   }
