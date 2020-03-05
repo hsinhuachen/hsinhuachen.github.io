@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="149.333px" height="53.75px" viewBox="0 0 149.333 53.75" enable-background="new 0 0 149.333 53.75" xml:space="preserve">
+	 <defs>
+	  <pattern id="pattern" patternUnits="userSpaceOnUse" width="100" height="100">
+	    <image xlink:href="svg/FEE01270F30C64FA.jpg" x="0" y="0" width="100" height="100" />
+	  </pattern>
+	</defs>
+	<path class="tabPath" fill="url(#pattern)" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M146.667,47.913c0,2.2-1.8,4-4,4H17.108c-2.2,0-5.219-1.324-6.708-2.943l-4.364-4.744c-1.489-1.619-2.708-4.743-2.708-6.943V7
+		c0-2.2,1.8-4,4-4h125.559c2.2,0,5.272,1.273,6.828,2.829l4.123,4.124c1.556,1.556,2.828,4.628,2.828,6.829V47.913z"/>
+	<path class="tabPath" fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M136.559,34.282c0,3.3-2.7,6-6,6H9c-3.3,0-6-2.7-6-6V8c0-3.3,2.7-6,6-6h121.559c3.3,0,6,2.7,6,6V34.282z"/>
+</svg>
