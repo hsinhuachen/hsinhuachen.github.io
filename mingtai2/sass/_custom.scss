@@ -53,6 +53,7 @@ a:focus{
 }
 
 .block-md{
+    display: none;
     @media (max-width: 767px) {
         display: block;
     }
@@ -96,11 +97,14 @@ a:focus{
     padding: 43px 0 65px 0;
     background-image: url('../imgs/banner.jpg');
     @media (max-width: 767px) {
+        position: relative;
+        height: 100vh;
         background-position: center left -120px;
     }
     @media (max-width: 576px) {
+        max-height: 700px;
         background-image: url('../imgs/banner-m.jpg');
-        background-size: cover;
+        background-size: 100%;
         background-position: center top;
     }
     h2{
@@ -231,6 +235,13 @@ a:focus{
     padding: 45px 0 0 0;
     margin: 0;
     list-style: none;
+    @media (max-width: 767px) {
+        padding-top: 0;
+        position: absolute;
+        bottom: 130px;
+        left: 0;
+        right: 0;
+    }
     li{
         position: relative;
         color: #FFF;
@@ -258,17 +269,11 @@ a:focus{
             font-size: 150%;
         }
     }
-    @media (max-width: 767px) {
-        padding-top: 450px;
-    }
     p.text-primary{
         font-size: 2.3rem;
         text-indent: 0px;
         text-align: center;
         padding-top: 5px;
-    }
-    .gobtn{
-        margin-top: 50px;
     }
 }
 
@@ -294,8 +299,18 @@ a:focus{
 }
 
 @media (max-width: 767px) {
-    .banner-list li{
-        margin: 0 5px;
+    .banner-list {
+        li{
+            margin: 0 5px;
+        }
+    }
+
+    .banner{
+        .gobtn{
+            position: absolute;
+            left: 30%;
+            bottom: 60px;
+        }
     }
 
     .circle, .banner-list li .d-table-cell{
@@ -468,7 +483,7 @@ a:focus{
     }
     .wrap{
         color: #5E6875;
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         font-weight: 700;
         line-height: 134%;
         width: 200px;
@@ -480,7 +495,7 @@ a:focus{
 }
 
 .step-icon{
-    max-width: 85%;
+    max-width: 80%;
     height: auto;
     margin: 5px auto 0 auto;
     display: block;
@@ -612,6 +627,7 @@ a:focus{
 
     .banner-list p.text-primary{
         font-size: 1.1rem;
+        word-break: keep-all;
     }
 
     .banner-list {
@@ -662,7 +678,7 @@ a:focus{
         .wrap{
             width: 180px;
             height: 180px;
-            font-size: 1.7rem;  
+            font-size: 1.6rem;  
         }
     }
 
